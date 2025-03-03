@@ -1,5 +1,5 @@
 import "./App.css";
-import TodoRowItem from "./components/TodoRowItem";
+import TodoTable from "./components/TodoTable";
 
 function App() {
   // array of 3 java script objects
@@ -14,26 +14,9 @@ function App() {
       <div className="card text-white bg-dark mb-3">
         <div className="card-header">Your Todo's</div>
         <div className="card-body">
-          <table className="table table-striped table-bordered table-hover table-dark">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Description</th>
-                <th scope="col">Assigned</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              {todos.map((todo) => (
-                <TodoRowItem
-                  key={todo.rowNumber}
-                  rowNumber={todo.rowNumber}
-                  rowDescription={todo.rowDescription}
-                  rowAssigned={todo.rowAssigned}
-                />
-              ))}
-            </tbody>
-          </table>
+          <TodoTable 
+            todos={todos}
+          />
         </div>
       </div>
     </div>
