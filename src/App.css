@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+/* body {
+  background-color: black;
+  color: rgb(212, 207, 207);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+} */
