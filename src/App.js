@@ -9,6 +9,9 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <p>
+          This is a React app that will be used to manage todos.
+        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
