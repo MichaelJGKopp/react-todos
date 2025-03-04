@@ -13,7 +13,7 @@ function NewTodoForm(props) {
   };
 
   return (
-    <div className="mt-5">
+    <div className="mt-4">
       <form>
         <div className="mb-3">
           <label className="form-label">Assigned</label>

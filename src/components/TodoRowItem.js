@@ -7,7 +7,7 @@ function TodoRowItem(props) {
       <td>{props.rowAssigned}</td>
       <td>
         <button
-          className="btn btn-danger"
+          className="btn btn-danger btn-sm"
           onClick={() => props.deleteTodo(props.rowNumber)}
         >
           Delete
