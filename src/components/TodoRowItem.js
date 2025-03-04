@@ -1,7 +1,8 @@
 function TodoRowItem(props) {
   return (
     // can only return one element, wrap in div if necessary
-    <tr>
+    <tr onClick={() => {}}>
+      {/* FIXME: add onClick event */}
       <th scope="row">{props.rowNumber}</th>
       <td>{props.rowDescription}</td>
       <td>{props.rowAssigned}</td>
