@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import TodoTable from "./components/TodoTable";
+import NewTodoForm from "./components/NewTodoForm";
 
 function App() {
   // array of 3 java script objects
@@ -33,6 +34,7 @@ function App() {
           <button className="btn btn-primary mx-5 my-1" onClick={addTodo}>
             Add new todo
           </button>
+          <NewTodoForm />
         </div>
       </div>
     </div>
