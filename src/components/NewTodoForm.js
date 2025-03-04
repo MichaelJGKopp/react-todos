@@ -1,12 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
 
 function NewTodoForm() {
+
+    const [description, setDescription] = useState("");
+    const [assigned, setAssigned] = useState("");
+
   const descriptionChange = (event) => {
     console.log(event.target.value);
+    setDescription(event.target.value);
   };
 
   const assignedChange = (event) => {
     console.log("assigned", event.target.value)
+    setAssigned(event.target.value);
   }
 
   return (
@@ -18,6 +24,7 @@ function NewTodoForm() {
           className="form-control" 
           required
           onChange={assignedChange}
+          value={assigned}
           ></input>
         </div>
         <div className="mb-3">
@@ -27,6 +34,7 @@ function NewTodoForm() {
           rows={3} 
           required
           onChange={descriptionChange}
+          value={description}
           ></textarea>
         </div>
         <button type="button" className="btn btn-primary mt-3">
