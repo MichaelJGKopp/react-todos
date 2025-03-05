@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./App.css";
-import TodoTable from "./components/TodoTable";
-import NewTodoForm from "./components/NewTodoForm";
+import { TodoTable } from "./components/TodoTable";
+import { NewTodoForm } from "./components/NewTodoForm";
 
-function App() {
+export const App = () => {
   const [showAddTodoForm, setShowAddTodoForm] = useState(false);
 
   // array of 3 java script objects
@@ -62,6 +62,4 @@ function App() {
       </div>
     </div>
   );
-}
-
-export default App;
+};

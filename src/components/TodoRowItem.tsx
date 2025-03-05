@@ -1,11 +1,10 @@
 import React from "react";
 
-function TodoRowItem(props: {
+export const TodoRowItem: React.FC<{  
   rowNumber: number,
   rowDescription: string,
   rowAssigned: string,
-  deleteTodo: Function
-}) {
+  deleteTodo: Function}> = (props) => {
   return (
     // can only return one element, wrap in div if necessary
     <tr onClick={() => {}}>
