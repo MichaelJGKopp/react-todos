@@ -1,4 +1,11 @@
-function TodoRowItem(props) {
+import React from "react";
+
+function TodoRowItem(props: {
+  rowNumber: number,
+  rowDescription: string,
+  rowAssigned: string,
+  deleteTodo: Function
+}) {
   return (
     // can only return one element, wrap in div if necessary
     <tr onClick={() => {}}>

@@ -16,7 +16,7 @@ function App() {
   // const addTodo = () => alert("Add new todo");
 
   // function to add a new todo onClick
-  const addTodo = (description, assigned) => {
+  const addTodo = (description: string, assigned: string) => {
     let rowNumber = 0;
 
     if (todos.length > 0) {
@@ -33,7 +33,7 @@ function App() {
     setTodos([...todos, newTodo]);
   };
 
-  const deleteTodo = (rowNumber) => {
+  const deleteTodo = (rowNumber: number) => {
     let filtered = todos.filter(function (value) {
       return value.rowNumber !== rowNumber;
     });
